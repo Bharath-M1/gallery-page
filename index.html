@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List with filter</title>
+    <!-- Owl css & theme -->
+    <link rel="stylesheet" href="./assets/owl.carousel.css" />
+    <link rel="stylesheet" href="./assets/owl.theme.default.min.css" />
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container border">
+      <div class="row">
+        <!-- side bar code -->
+        <div class="col-3 border">
+          <span>FILTERS</span>
+          <button class="float-right btn p-0 m-0">CLEAR ALL</button>
+          <hr />
+          <!-- Catogetries -->
+          <span>CATEGORIES</span>
+          <button class="float-right btn p-0 m-0">
+            <i class="fas fa-search text-muted"></i>
+          </button>
+          <div class="mt-2">
+            <input type="checkbox" name="cate" id="designs" />
+            <span>Shirts <span class="text-muted">(79036)</span></span>
+          </div>
+          <div class="mt-1">
+            <input type="checkbox" name="cate" id="designs" />
+            <span>Tshirts <span class="text-muted">(65812)</span></span>
+          </div>
+          <div class="mt-1">
+            <input type="checkbox" name="cate" id="designs" />
+            <span
+              >Mobile Accessories <span class="text-muted">(22082)</span></span
+            >
+          </div>
+          <div class="mt-1">
+            <input type="checkbox" name="cate" id="designs" />
+            <span>Jeans <span class="text-muted">(17708)</span></span>
+          </div>
+          <div class="mt-1">
+            <input type="checkbox" name="cate" id="designs" />
+            <span>Casual Shoes <span class="text-muted">(17307)</span></span>
+          </div>
+          <div class="mt-1">
+            <input type="checkbox" name="cate" id="designs" />
+            <span>Trousers <span class="text-muted">(16592)</span></span>
+          </div>
+          <div class="mt-1">
+            <input type="checkbox" name="cate" id="designs" />
+            <span>Sweatshirts <span class="text-muted">(11968)</span></span>
+          </div>
+          <div class="mt-1">
+            <input type="checkbox" name="cate" id="designs" />
+            <span>Jackets <span class="text-muted">(8321)</span></span>
+          </div>
+          <button class="mt-1 text-danger btn">+293 More</button>
+          <hr />
+          <!-- brands -->
+          <div>
+            <span>BRANDS</span>
+            <button class="float-right btn p-0 m-0">
+              <i class="fas fa-search text-muted"></i>
+            </button>
+            <div class="mt-2">
+              <input type="checkbox" name="cate" id="designs" />
+              <span>Macmerise <span class="text-muted">(13485)</span></span>
+            </div>
+            <div class="mt-1">
+              <input type="checkbox" name="cate" id="designs" />
+              <span>Roadster <span class="text-muted">(13049)</span></span>
+            </div>
+            <div class="mt-1">
+              <input type="checkbox" name="cate" id="designs" />
+              <span>Puma<span class="text-muted">(9416)</span></span>
+            </div>
+            <div class="mt-1">
+              <input type="checkbox" name="cate" id="designs" />
+              <span>Parx <span class="text-muted">(5585)</span></span>
+            </div>
+            <div class="mt-1">
+              <input type="checkbox" name="cate" id="designs" />
+              <span>Blackberrys<span class="text-muted">(5472)</span></span>
+            </div>
+            <div class="mt-1">
+              <input type="checkbox" name="cate" id="designs" />
+              <span>Park Avenue <span class="text-muted">(5468)</span></span>
+            </div>
+            <div class="mt-1">
+              <input type="checkbox" name="cate" id="designs" />
+              <span
+                >United Colors of Benetton<span class="text-muted"
+                  >(5121)
+                </span></span
+              >
+            </div>
+            <div class="mt-1">
+              <input type="checkbox" name="cate" id="designs" />
+              <span>Flying Machine <span class="text-muted">(5062)</span></span>
+            </div>
+            <button class="mt-1 text-danger btn">+2060 More</button>
+          </div>
+          <hr />
+          <!-- prices -->
+          <div>
+            <span>PRICE</span>
+            <div class="mt-2">
+              <input type="checkbox" name="cate" id="designs" />
+              <span
+                >Rs. 199 to Rs. 8224
+                <span class="text-muted">(9355)</span></span
+              >
+            </div>
+            <div class="mt-1">
+              <input type="checkbox" name="cate" id="designs" />
+              <span
+                >Rs. 8224 to Rs. 16249
+                <span class="text-muted">(58)</span></span
+              >
+            </div>
+            <div class="mt-1">
+              <input type="checkbox" name="cate" id="designs" />
+              <span
+                >Rs. 24274 to Rs. 32299<span class="text-muted">(2)</span></span
+              >
+            </div>
+          </div>
+          <hr />
+          <!-- color -->
+          <div>
+            <span>COLOR</span>
+            <button class="float-right btn p-0 m-0">
+              <i class="fas fa-search text-muted"></i>
+            </button>
+            <div class="mt-2">
+              <input type="checkbox" name="cate" id="designs" />
+              <button class="col_b"></button>
+              <span>Black <span class="text-muted">(2991)</span></span>
+            </div>
+            <div class="mt-1">
+              <input type="checkbox" name="cate" id="designs" />
+              <button class="col_bl"></button>
+              <span>Blue <span class="text-muted"> (1172)</span></span>
+            </div>
+            <div class="mt-1">
+              <input type="checkbox" name="cate" id="designs" />
+              <button class="col_g"></button>
+              <span>Grey<span class="text-muted"> (1090)</span></span>
+            </div>
+            <div class="mt-1">
+              <input type="checkbox" name="cate" id="designs" />
+              <button class="col_nb"></button>
+              <span>Navy Blue <span class="text-muted"> (1034)</span></span>
+            </div>
+            <div class="mt-1">
+              <input type="checkbox" name="cate" id="designs" />
+              <button class="col_v"></button>
+              <span>violet<span class="text-muted"> (935)</span></span>
+            </div>
+            <div class="mt-1">
+              <input type="checkbox" name="cate" id="designs" />
+              <button class="col_r"></button>
+              <span>Red <span class="text-muted">(533)</span></span>
+            </div>
+            <div class="mt-1">
+              <input type="checkbox" name="cate" id="designs" />
+              <button class="col_o"></button>
+              <span>Olive<span class="text-muted"> (295) </span></span>
+            </div>
+            <div class="mt-1">
+              <input type="checkbox" name="cate" id="designs" />
+              <button class="col_t"></button>
+              <span>Tomato <span class="text-muted">(290)</span></span>
+            </div>
+            <button class="mt-1 text-danger btn">+31 More</button>
+          </div>
+          <hr />
+          <!-- discount range -->
+          <div>
+            <span>DISCOUNT RANGE</span>
+            <div class="mt-2">
+              <input type="checkbox" name="cate" id="designs" />
+              <span>10% and above</span>
+            </div>
+            <div class="mt-1">
+              <input type="checkbox" name="cate" id="designs" />
+              <span>20% and above</span>
+            </div>
+            <div class="mt-1">
+              <input type="checkbox" name="cate" id="designs" />
+              <span>30% and above</span>
+            </div>
+            <div class="mt-1">
+              <input type="checkbox" name="cate" id="designs" />
+              <span>40% and above</span>
+            </div>
+            <div class="mt-1">
+              <input type="checkbox" name="cate" id="designs" />
+              <span>60% and above</span>
+            </div>
+            <div class="mt-1">
+              <input type="checkbox" name="cate" id="designs" />
+              <span>60% and above</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- main view code -->
+        <div class="col-9 border">
+          <div class="row">
+            <!-- drop down menu -->
+            <div class="dropdown d-inline">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+              >
+                Add Ons
+              </button>
+              <form class="dropdown-menu p-0 m-0">
+                <label class="dropdown-item"
+                  ><input type="checkbox" class="p-0 ml-1" /> Comes
+                  With..</label
+                >
+              </form>
+            </div>
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+              >
+                Bundles
+              </button>
+              <form class="dropdown-menu p-0 m-0">
+                <label class="dropdown-item"
+                  ><input type="checkbox" class="p-0 ml-1" /> Bundles</label
+                ><label class="dropdown-item d-inline"
+                  ><input type="checkbox" class="p-0 ml-1" /> Singles</label
+                >
+              </form>
+            </div>
+          </div>
+
+          <!-- For gallery -->
+          <div class="row justify-content-around">
+            <!-- single product colum -->
+            <div class="col-3" id="aet">
+              <!-- adding owl css -->
+              <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <img
+                    src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/7488102/2019/8/22/b40e3089-2e16-4982-b6e9-9e5522d6725b1566454086712-Dennis-Lingo-Men-Pink-Slim-Fit-Solid-Casual-Shirt-9891566454-5.jpg  "
+                    alt="banner image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="item">
+                  <img
+                    src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/7488102/2019/8/22/8002a744-0dad-4dbb-9481-cf0090134c3b1566454086786-Dennis-Lingo-Men-Pink-Slim-Fit-Solid-Casual-Shirt-9891566454-1.jpg"
+                    alt="banner image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="item">
+                  <img
+                    src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/7488102/2019/8/22/9292c168-14fc-45b0-94d7-442414f8d4f81566454086728-Dennis-Lingo-Men-Pink-Slim-Fit-Solid-Casual-Shirt-9891566454-4.jpg"
+                    alt="banner image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="item">
+                  <img
+                    src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/7488102/2019/8/22/8002a744-0dad-4dbb-9481-cf0090134c3b1566454086786-Dennis-Lingo-Men-Pink-Slim-Fit-Solid-Casual-Shirt-9891566454-1.jpg"
+                    alt="banner image"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="red">
+                <p class="p-0 m-0"><b>Dennis Lingo</b></p>
+                <span class="text-muted h6"> Men Slim Fit Casual Shirt</span>
+                <p class="h6">
+                  <b> Rs.554 </b> &nbsp;<span class="text-muted h6"
+                    ><del> Rs.1849</del></span
+                  >
+                  &nbsp;
+                  <span class="text-warning h6"> (70% OFF)</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-3 thar">
+              <img
+                src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2019/10/1/c90518bb-69cd-4b49-a473-d864c987a32b1569914393537-1.jpg"
+                alt="banner image"
+                class="img-fluid"
+              />
+              <div>
+                <p class="p-0 m-0"><b>HIGHLANDER</b></p>
+                <span class="text-muted h6"> Men Slim Fit Casual Shirt</span>
+                <p class="h6">
+                  <b> Rs.419 </b> &nbsp;<span class="text-muted h6"
+                    ><del> Rs.1049</del></span
+                  >
+                  &nbsp;
+                  <span class="text-warning h6"> (60% OFF)</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-3">
+              <img
+                src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2414313/2018/3/13/11520926368526-HERENOW-Men-Red--Black-Regular-Fit-Checked-Casual-Shirt-8881520926368447-1.jpg"
+                alt="banner image"
+                class="img-fluid"
+              />
+              <div>
+                <p class="p-0 m-0"><b>HERE & NOW</b></p>
+                <span class="text-muted h6"> Men Regular Fit Casual Shirt</span>
+                <p class="h6">
+                  <b> Rs.824 </b> &nbsp;<span class="text-muted h6"
+                    ><del> Rs.1499</del></span
+                  >
+                  &nbsp;
+                  <span class="text-warning h6"> (45% OFF)</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-3">
+              <img
+                src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11008602/2020/1/20/8b494575-e040-4560-853d-0ddb4d4a42021579510958229-Roadster-Men-Shirts-7641579510955741-1.jpg"
+                alt="banner image"
+                class="img-fluid"
+              />
+              <div>
+                <p class="p-0 m-0"><b>HIGHLANDER</b></p>
+                <span class="text-muted h6"> Men Slim Fit Casual Shirt</span>
+                <p class="h6">
+                  <b> Rs.519 </b> &nbsp;<span class="text-muted h6"
+                    ><del> Rs.1299</del></span
+                  >
+                  &nbsp;
+                  <span class="text-warning h6"> (60% OFF)</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- scripts jquery, owl, popper, bootstrap, fontawsome, custom js to owl -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/owl.carousel.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/91e30d26bf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
